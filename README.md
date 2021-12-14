@@ -14,6 +14,19 @@ CF_API_TOKEN = [ Your Cloudflare Workers API Token ]
 CF_ZONE_ID = [ Your Cloudflare Zone ID]
 ```
 
+# After clone
+
+1. Change `wrangler.toml`
+    Change `name`, `routes` etc
+
+2. Reset Github remote url
+    
+    `git remote set-url origin ${{ git-url}}`
+
+3. Push to Github `master` branch
+
+    `git push -u origin master`
+
 # Github Actions
 
 - `Cloudflare-Deploy-Prod.yml` - Automatically deploy 

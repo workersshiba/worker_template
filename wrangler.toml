@@ -3,13 +3,13 @@ name = "worker_template"
 type = "webpack"
 account_id = " [ env.CF_ACCOUNT_ID ] "
 workers_dev = true
-route = ""
-zone_id = " [ env.CF_ZONE_ID ] "
-vars = { ENVIROMENT = "dev" }
+route = "workers.chiba.bar/worker_template/*"
+# zone_id = " [ env.CF_ZONE_ID ] "
+# vars = { ENVIROMENT = "dev" }
 
-[env.production]
-vars = { ENVIROMENT = "production" }
-routes = [
+# [env.production]
+# vars = { ENVIROMENT = "production" }
+# routes = [
   # TODO: CHANGE route
-  "workers.chiba.bar/worker_template/*"
-]
+##   "workers.chiba.bar/worker_template/*"
+# ]
